@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelPets</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark rounded-navbar">
+        <a class="navbar-brand" href="index.html">HotelPets</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" id="userNav"></ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid main-content">
+        <div class="row mt-4">
+            <!-- Profile Settings -->
+            <div class="col-md-6 profile-settings">
+                <div class="text-center profile-picture rounded-circle">
+                    <img src="../images/profilepicture.jpg" alt="Profile Picture">
+                </div>
+                <div class="settings">
+                    <br>
+                    <center>
+                    <ul>
+                        <br>
+                        <label for="input-file">Mudar Foto de Perfil</label>
+                        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+                        <br>
+                        <label for="input-password">Mudar Password</label>
+                        <input id="input-password">
+                        <br>
+                        <label for="input-email">Mudar Email</label>
+                        <input id="input-email">
+                        <br>
+                    </ul>
+                    </center>
+                </div>
+                <a href="camaras.html" class="card" style="margin-top: 100px;">
+                    <img src="../images/camaras.jpg" class="card-img-top" alt="Câmaras">
+                    <div class="card-body">
+                        Câmaras
+                    </div>
+                </a>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-6">
+                <h3 style="font-weight: bold;">Histórico de compras</h3>
+                <hr>
+                    <div class="content-section mb-4" style="text-align: center;" id="purchaseHistory">
+                    </div>
+                <h3 style="font-weight: bold; margin-top: 250px;">Fotografias</h3>
+                <hr>
+                <div class="content-section" style="text-align: center;">
+                    <div class="section-box">
+                        <p style="font-size: 18px;">Ainda não tem nenhuma fotografia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/user.js"></script>
+
+</body>
+</html>
